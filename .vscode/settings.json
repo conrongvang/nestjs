@@ -1,0 +1,26 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Tell VSCode to use Prettier as default file formatter
+  "editor.formatOnSave": true, // Tell VSCode to format files on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabSize": 2,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["style \\=([^;]*);", "'([^']*)'"],
+    ["Style \\=([^;]*);", "'([^']*)'"],
+    ["classes \\=([^;]*);", "'([^']*)'"],
+    ["Classes \\=([^;]*);", "'([^']*)'"],
+    ["Classes \\=([^;]*);", "\"([^\"]*)\""],
+    ["Classes \\=([^;]*);", "\\`([^\\`]*)\\`"]
+  ],
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass"]
+}

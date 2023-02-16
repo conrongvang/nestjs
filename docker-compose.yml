@@ -1,0 +1,16 @@
+version: "3"
+services:
+  ecommerce_postgres:
+    image: postgres:14.1-alpine
+    ports:
+    - "5432:5432"
+    volumes:
+    - $HOME/docker/volumnes/postgres:/var/lib/postgresql/data
+    env_file:
+    - docker.env
+    networks:
+    - postgres
+
+networks:
+  postgres:
+    driver: bridge
